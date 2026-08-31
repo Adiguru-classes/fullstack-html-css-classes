@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Navbar and Cards</title>
+<style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* FIXED NAVBAR */
+
+.navbar {
+    width: 100%;
+    height: 70px;
+
+    background-color: black;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 50px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    /* z-index: 1000; */
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* CARDS CONTAINER */
+
+.cards-container {
+
+    margin-top: 70px;
+
+    padding: 40px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 10px;
+}
+
+
+/* CARD */
+
+.card {
+
+    height: 250px;
+
+    border: 1px solid #ccc;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+.card button {
+
+    padding: 10px 20px;
+
+    border: none;
+
+    background-color: black;
+    color: white;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+}</style>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <h2>AdiGuru</h2>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+
+    </nav>
+
+
+    <div class="cards-container">
+
+        <div class="card">
+            <h2>HTML</h2>
+            <p>Learn HTML and build website structures.</p>
+            <button>Learn More</button>
+        </div>
+
+        <div class="card">
+            <h2>CSS</h2>
+            <p>Learn CSS and design beautiful websites.</p>
+            <button>Learn More</button>
+        </div>
+
+        <div class="card">
+            <h2>JavaScript</h2>
+            <p>Learn JavaScript and create interactive websites.</p>
+            <button>Learn More</button>
+        </div>
+
+        <div class="card">
+            <h2>React</h2>
+            <p>Learn React and build modern frontend applications.</p>
+            <button>Learn More</button>
+        </div>
+
+        <div class="card">
+            <h2>Node.js</h2>
+            <p>Learn backend development using Node.js.</p>
+            <button>Learn More</button>
+        </div>
+
+        <div class="card">
+            <h2>Express.js</h2>
+            <p>Build APIs and backend servers using Express.</p>
+            <button>Learn More</button>
+        </div>
+
+        <div class="card">
+            <h2>MongoDB</h2>
+            <p>Learn databases and store application data.</p>
+            <button>Learn More</button>
+        </div>
+
+        <div class="card">
+            <h2>Git & GitHub</h2>
+            <p>Learn version control and manage your projects.</p>
+            <button>Learn More</button>
+        </div>
+
+        <div class="card">
+            <h2>MERN Stack</h2>
+            <p>Build complete full-stack web applications.</p>
+            <button>Learn More</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

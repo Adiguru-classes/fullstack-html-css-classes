@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .contact-form {
+    width: 500px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    width: 120px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    margin-left: 120px;
+    padding: 10px 25px;
+}
+    </style>
+</head>
+<body>
+    <form class="contact-form">
+
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name">
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email">
+    </div>
+
+    <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone">
+    </div>
+
+    <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message"></textarea>
+    </div>
+
+    <button type="submit">Submit</button>
+
+</form>
+</body>
+</html>

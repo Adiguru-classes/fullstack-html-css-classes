@@ -1,0 +1,61 @@
+/* Remove default spacing */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+body{
+    font-family:Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:#1f2937;
+    padding:15px 60px;
+}
+
+/* Logo */
+.logo{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
+
+/* Menu */
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#38bdf8;
+}
+
+/* Login Button */
+.login-btn{
+    padding:10px 20px;
+    border:none;
+    background-color:#2563eb;
+    color:white;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.login-btn:hover{
+    background-color:#1d4ed8;
+}

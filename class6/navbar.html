@@ -1,83 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<style>
+  <head>
 
-.navbar{
+    <style>
+      .navbar {
+         display: flex;
+        justify-content: space-between;
 
-display:flex;
+        align-items: center;
 
-justify-content:space-between;
+        background-color: black;
 
-align-items:center;
+        padding: 20px; 
+      }
 
-background-color:black;
+      .logo {
+color:red;
+        font-size: 30px;
 
-padding:20px;
+        font-weight: bold;
+      }
 
-}
+      .menu {
+        display: flex;
 
-.logo{
+        gap: 20px;
+      }
 
-color:white;
+      .menu a {
+        color: white;
 
-font-size:30px;
+        text-decoration: none;
 
-font-weight:bold;
+        font-size: 20px;
+      }
 
-}
+      .menu a:hover {
+        color: yellow;
+      }
+    </style>
+  </head>
 
-.menu{
+  <body>
 
-display:flex;
+    <div class="navbar">
 
-gap:20px;
+      <div class="logo">
+        <!-- Adiguru -->
+        <img src="images.webp" alt="" height="50" width="50" />
+      </div>
 
-}
+      <div class="menu">
+        <a href="#">Home</a>
 
-.menu a{
+        <a href="#">About</a>
 
-color:white;
+        <a href="#">Courses</a>
 
-text-decoration:none;
+        <a href="#">Contact</a>
+      </div>
+    </div>
 
-font-size:20px;
-
-}
-
-.menu a:hover{
-
-color:yellow;
-
-}
-
-</style>
-</head>
- 
-<body>
-
-<div class="navbar">
-
-<div class="logo">
-
-Adiguru
-
-</div>
-
-
-<div class="menu">
-
-<a href="#">Home</a>
-
-<a href="#">About</a>
-
-<a href="#">Courses</a>
-
-<a href="#">Contact</a>
-
-</div>
-
-</div>
-
-</body>
+  </body>
 </html>
